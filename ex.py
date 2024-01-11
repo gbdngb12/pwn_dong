@@ -30,3 +30,4 @@ if config_os == "windows" :
     exit(1)
 elif config_os == "linux" :
     executable = ELF(struct_local["binary"])
+
