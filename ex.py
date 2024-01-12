@@ -24,10 +24,4 @@ else :
     print("unknown config_mode ", config_mode)
     exit(1)
 
-if config_os == "windows" :
-    executable = {} #winfile(struct_local["binary"])
-    print("not supported windows yet")
-    exit(1)
-elif config_os == "linux" :
-    executable = ELF(struct_local["binary"])
-
+###############################################
