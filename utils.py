@@ -8,3 +8,6 @@ def bytes_to_int(value: bytes, endian: str = 'little') -> int :
 
 def print_bytes(what:str, bstr:str):
     print("[",what, "]", (b''.join(b'\\x%02x' % i for i in bstr)).decode())
+
+def int_to_bytes(x:int) -> bytes:
+    return str(x).encode()
